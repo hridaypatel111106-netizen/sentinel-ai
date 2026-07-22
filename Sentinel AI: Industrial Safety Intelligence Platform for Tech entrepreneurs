@@ -1,0 +1,74 @@
+# 🛡️ Sentinel AI — Industrial Safety Intelligence Platform
+
+> **Multi-Agent Compound Risk Detection & Autonomous Emergency Response System**  
+> *Preventing industrial disasters by breaking operational silos between IoT telemetry, permit logs, and workforce presence.*
+
+---
+
+## 📌 Executive Summary
+
+Traditional SCADA systems and industrial safety monitors operate in isolated silos. They trigger alarms based on single-variable threshold breaches (e.g., gas exceeding 100 ppm) but remain **inherently blind to compound risk conditions**—scenarios where multiple sub-threshold operational parameters overlap to create catastrophic hazards.
+
+**Sentinel AI** bridges this critical gap. By correlating real-time streams from IoT environmental sensors, active permit-to-work (PTW) records, workforce shift data, and statutory safety codes (OISD / Factory Act) into a single predictive layer, Sentinel AI identifies multi-domain hazard patterns **hours before traditional threshold systems trigger**.
+
+---
+
+## 🔥 Key Platform Capabilities
+
+- **⚡ Multi-Agent Compound Risk Engine:** Asynchronously correlates gas concentration, active hot work permits, and personnel PPE compliance to calculate unified compound risk indices.
+- **🗺️ Digital Twin Zone Safety Visualizer:** Interactive spatial layout mapping facility zones with real-time status telemetry and cross-domain hazard linkage banners.
+- **📜 Digital Permit Intelligence (SIMOPS Protection):** Automatically cross-checks permit authorizations against live environmental telemetry, flagging dangerous simultaneous operations and issuing automated permit revocation orders.
+- **🚨 Autonomous Emergency Response Orchestrator:** Triggers immediate zone evacuation advisories, logs evidence timelines, and outlines corrective action workflows during critical risk conditions.
+- **🤖 Gemini Regulatory AI Copilot:** Powered by Google Gemini, providing site safety engineers with instant, grounded answers regarding OISD/Factory Act compliance and root-cause mitigation strategies.
+
+---
+
+## 🌐 Localhost & API Endpoints
+
+Once running locally, access your application and services here:
+- **Frontend Dashboard (Next.js):** `http://localhost:3000`
+- **Backend API Root / Swagger Docs (FastAPI):** `http://localhost:8000/docs`
+- **Interactive ReDoc API Reference:** `http://localhost:8000/redoc`
+
+---
+
+## 📊 Baseline SCADA vs. Sentinel AI Engine Benchmark
+
+| Evaluation Metric | Traditional SCADA (Baseline) | Sentinel AI Engine |
+| :--- | :--- | :--- |
+| **Gas Telemetry (Sensor S102)** | `91 ppm` — **SAFE** (Below 100 ppm trip limit) | `91 ppm` — **ELEVATED** (Weighted compound score) |
+| **Permit State (Permit P101)** | `APPROVED` — Hot Work active | `HIGH HAZARD OVERLAP` — Ignition source active |
+| **Overall Assessment** | 🟢 **NORMAL OPERATIONAL STATE** | 🔴 **CRITICAL RISK (90%)** |
+| **System Action** | No action. System waits for explosion or 100+ ppm spike. | **Automated Permit Revocation & Zone Evacuation Initiated.** |
+| **Core Value** | *Silo Blindspot:* Ignores spark source in gas zone. | *Cross-Domain Intelligence:* Preemptively prevents ignition. |
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Frontend:** Next.js, React, Tailwind CSS, Lucide Icons, Recharts
+- **Backend:** FastAPI (Python), Asynchronous Event Loop, Pydantic
+- **AI / LLM Integration:** Google Gemini API (`google-genai`)
+- **Data Protocols:** JSON Telemetry Simulation (Ready for MQTT / OPC-UA ingestion)
+
+---
+
+## 🚀 Quickstart & Installation
+
+### 1. Backend Setup (FastAPI)
+```bash
+cd backend
+python -m venv venv
+# On Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn app:app --reload --port 8000
+
+
+## 🌐 Localhost & API Endpoints
+
+Once you have started the application locally, access the services here:
+
+- **🖥️ Frontend Dashboard:** [http://localhost:3000](http://localhost:3000)
+- **📚 FastAPI Swagger Docs:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- **📖 FastAPI ReDoc Reference:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
