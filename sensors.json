@@ -1,0 +1,26 @@
+[
+  {
+    "id": "S101",
+    "location": "Zone A",
+    "temperature": 68,
+    "gas_level": 32,
+    "humidity": 45,
+    "vibration": 20
+  },
+  {
+    "id": "S102",
+    "location": "Zone B",
+    "temperature": 81,
+    "gas_level": 91,
+    "humidity": 52,
+    "vibration": 78
+  },
+  {
+    "id": "S103",
+    "location": "Zone C",
+    "temperature": 55,
+    "gas_level": 28,
+    "humidity": 61,
+    "vibration": 35
+  }
+]

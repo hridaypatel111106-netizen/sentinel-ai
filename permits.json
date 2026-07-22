@@ -1,0 +1,16 @@
+[
+  {
+    "id": "P101",
+    "type": "Hot Work",
+    "zone": "Zone B",
+    "status": "approved",
+    "issued_time": "10:15"
+  },
+  {
+    "id": "P102",
+    "type": "Confined Space Entry",
+    "zone": "Zone A",
+    "status": "pending",
+    "issued_time": "10:30"
+  }
+]

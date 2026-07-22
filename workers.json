@@ -1,0 +1,14 @@
+[
+  {
+    "id": "W101",
+    "name": "Rahul",
+    "zone": "Zone A",
+    "ppe": true
+  },
+  {
+    "id": "W102",
+    "name": "Amit",
+    "zone": "Zone B",
+    "ppe": false
+  }
+]
